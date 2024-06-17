@@ -30,7 +30,7 @@ button.addEventListener("click", function() {
         message.innerHTML = 'Incorrect username and password. Hmm. Suspicious.'
     }
 
-    else{
+    if (username === '' && password === ""){
         message.innerHTML = 'You need to enter SOMETHING.'
     }
 
