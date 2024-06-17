@@ -20,17 +20,11 @@ button.addEventListener("click", function() {
     
     else if (username === secretUsername && password !== secretPassword){
         message.innerHTML = 'Wrong password - be careful not to mess this up too many times.'
-    }
-
-    else if (username !== secretUsername && password === secretPassword){
+    }else if (username !== secretUsername && password === secretPassword){
         message.innerHTML = 'Wrong username - is there a typo?'
-    }
-
-    else if (username !== secretUsername && password !== secretPassword){
+    }else if (username !== secretUsername && password !== secretPassword){
         message.innerHTML = 'Incorrect username and password. Hmm. Suspicious.'
-    }
-
-    if (username === '' && password === ""){
+    }if (username === '' && password === ""){
         message.innerHTML = 'You need to enter SOMETHING.'
     }
 
